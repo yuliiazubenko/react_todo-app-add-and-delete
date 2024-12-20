@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { ErrorType } from '../../types/ErrorType';
 
 type Props = {
@@ -19,8 +13,6 @@ export const TodoHeader: React.FC<Props> = props => {
   const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log(inputRef);
     if (inputRef.current) {
       inputRef.current.focus();
     }

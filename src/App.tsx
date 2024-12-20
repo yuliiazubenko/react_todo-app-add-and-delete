@@ -40,7 +40,6 @@ export const App: React.FC = () => {
   const completedTodosCount = todos.filter(todo => todo.completed).length;
 
   const onAddTodo = async (todoTitle: string) => {
-    // eslint-disable-next-line no-console
     try {
       setTempTodo({
         id: 0,
@@ -88,7 +87,6 @@ export const App: React.FC = () => {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line no-console
     (async () => {
       try {
         const data = await getTodos();
